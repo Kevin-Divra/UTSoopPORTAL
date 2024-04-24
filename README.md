@@ -2,7 +2,7 @@
 # FURPS
 ## Functionality (F):
 -	Sistem harus memberikan fungsionalitas lengkap yang memungkinkan pengguna untuk mengakses semua informasi yang mereka butuhkan terkait dengan kegiatan akademik, administrasi, dan kegiatan kampus lainnya. <br>
--	Fitur-fitur utama seperti dashboard, profil pengguna, pembelajaran online, sistem tagihan, upload soft skill, upload bukti bimbingan akademik, dan sistem absensi harus diperhitungkan. <br>
+-	Fitur-fitur utama seperti profil pengguna, pembelajaran online, e-library,  sistem tagihan, upload soft skill, dan sistem absensi harus diperhitungkan. <br>
 -	Sistem harus menyediakan fitur pencarian yang efisien untuk memudahkan pengguna menemukan informasi yang relevan. <br>
 ## Usability (U):
 -	Antarmuka pengguna harus ramah pengguna dan mudah dinavigasi. <br>
