@@ -5,7 +5,7 @@ from Dosen import Dosen
 import sys
 
 def main():
-    admin = SuperAdmin("422023023", "kevin", "kevin@gmail.com", "uts", ["The Last Battle", "The Screwtape", "The Great Divorce"])
+    admin = SuperAdmin("422023023", "kevin", "kevin@gmail.com", "uts", ["Laskar Pelangi", "Negri 5 Menara", "5cm"])
 
 
     nim_input = input("Masukkan NIM: ")
