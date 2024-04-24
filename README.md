@@ -21,7 +21,86 @@
 -	Sistem harus mudah untuk dipelihara dan diperbarui oleh administrator. <br>
 -	Diperlukan dokumentasi yang lengkap dan jelas untuk penggunaan sistem, termasuk panduan pengguna dan instruksi pemecahan masalah. <br>
 -	Dukungan teknis harus tersedia untuk membantu pengguna dengan masalah yang mungkin mereka alami saat menggunakan sistem.
+# Use Case and User Stories
+### User Roles (Actor)
+-	Mahasiswa
+-	Dosen
+-	Super Admin
+-	Admisi
+### User Stories (Functionalities)
+#### Mahasiswa
+-	Login
+-	Melihat Jadwal
+-	Melihat Nilai
+-	Membayar Tagihan
+-	Upload Softskill
+-	Absensi
+-	Akses E-Library
+#### Dosen
+-	Login
+-	Input Nilai
+#### Super Admin
+-	Login
+-	Memproses Pembayaran
+-	Memproses Absensi
+#### Admisi
+- Login
+-	Input Tagihan
 
 # USE CASE 
+![UTS PORTAL drawio](https://github.com/Kevin-Divra/UTSoopPORTAL/assets/151398701/95aca01c-7466-40c8-9472-e63221ae4d9a)
 
-# USE CASE DIAGRAM
+
+# CLASS DIAGRAM
+```mermaid
+classDiagram
+    class User {
+    <<abstract>>
+    +user nim
+    +Password
+    +Login ()
+    +LogOut ()
+    }
+    
+    class Mahasiswa {
+    +Jadwal
+    +Tagihan
+    +Nilai
+    +SoftSkill
+    +Absensi
+    +e-library
+    +Meliat Jadwal()
+    +Melihat Tagihan()
+    +Membayar Tagihan()
+    +Melihat Nilai()
+    +Upload Softskill()
+    +Absensi()
+    +Akses e-library()
+    }
+    
+    class Dosen {
+    +Nilai
+    +Upload Nilai()
+    }
+    
+    class Admisi{
+    +Jadwal
+    +Tagihan
+    +Upload Jadwal()
+    +Upload Tagihan()
+    }
+    
+     class SuperAdmin {
+    +Data
+    +Tagihan
+    +Absensi
+    +Verifikasi Data()
+    +Memproses Tagihan/Pembayaran()
+    +Memproses Absensi()
+    }
+    
+    SuperAdmin --|> User
+    Admisi --|> User
+    Mahasiswa --|> User
+    Dosen --|> User
+```
